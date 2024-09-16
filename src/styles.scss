@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+.u-color-palette {
+    &_red {
+        color: hsl(14, 86%, 42%);
+    }
+    &_green {
+        color: hsl(159, 69%, 38%);
+    }
+    &_rose {
+        &_50 {
+            color: hsl(20, 50%, 98%);
+        }
+        &_100 {
+            color: hsl(13, 31%, 94%);
+        }
+        &_300 {
+            color: hsl(14, 25%, 72%);
+        }
+        &_400 {
+            color: hsl(7, 20%, 60%);
+        }
+        &_500 {
+            color: hsl(12, 20%, 44%);
+        }
+        &_900 {
+            color: hsl(14, 65%, 9%);
+        }
+    }
+}
+
+.u-red-hat-text {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    &_400 {
+        font-weight: 400;
+    }
+    &_600 {
+        font-weight: 600;
+    }
+    &_700 {
+        font-weight: 700;
+    }
+}

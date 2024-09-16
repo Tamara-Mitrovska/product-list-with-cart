@@ -1,0 +1,31 @@
+.food-card {
+
+    &__image {
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    &__button {
+        height: 40px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__description {
+        &_font-size {
+            &_small {
+                font-size: 0.8rem;
+            }
+            &_large {
+                font-size: 1rem;
+            }
+        }
+    }
+}
