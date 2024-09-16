@@ -1,14 +1,31 @@
 .food-card {
+    --image-dimension: 250px;
+    &__image-section {
+        width: var(--image-dimension);
+        height: fit-content;
+        position: relative;
+    }
 
     &__image {
-        width: 250px;
-        height: 250px;
+        width: var(--image-dimension);
+        height: var(--image-dimension);
         border-radius: 10px;
     }
 
     &__button {
-        height: 40px;
+        // size
+        --height: 40px;
+        width: 150px;
+        height: var(--height);
         border-radius: 20px;
+
+        // positioning
+        position: absolute;
+        top: calc(var(--image-dimension) - var(--height) / 2);
+        left: 50%;
+        transform: translateX(-50%);
+
+        // text positioning
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -16,6 +33,14 @@
         gap: 10px;
         padding-left: 20px;
         padding-right: 20px;
+
+        // appearance
+        appearance: none;
+        border: 1px solid;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__description {
